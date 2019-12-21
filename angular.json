@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Angular-Dever1Cristian-CRUD": {
+    "AngurlarCRUD": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Angular-Dever1Cristian-CRUD",
+            "outputPath": "dist/AngurlarCRUD",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Angular-Dever1Cristian-CRUD:build"
+            "browserTarget": "AngurlarCRUD:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Angular-Dever1Cristian-CRUD:build:production"
+              "browserTarget": "AngurlarCRUD:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Angular-Dever1Cristian-CRUD:build"
+            "browserTarget": "AngurlarCRUD:build"
           }
         },
         "test": {
@@ -89,9 +89,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "../node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "../node_modules/jquery/dist/jquery.min.js",
+              "../node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           }
         },
         "lint": {
@@ -111,15 +115,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Angular-Dever1Cristian-CRUD:serve"
+            "devServerTarget": "AngurlarCRUD:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Angular-Dever1Cristian-CRUD:serve:production"
+              "devServerTarget": "AngurlarCRUD:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "Angular-Dever1Cristian-CRUD"
+  "defaultProject": "AngurlarCRUD"
 }
