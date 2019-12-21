@@ -1,3 +1,4 @@
+Aprenda a criar um aplicativo das quatro operações básicas de todos os sistemas, também conhecido como CRUD. Este aplicativo foi desenvolvido para todas as pessoas que já possuem conceitos angulares básicos e desejam testar seus conhecimentos criando um aplicativo simples.
 # AngularDever1CristianCRUD
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
